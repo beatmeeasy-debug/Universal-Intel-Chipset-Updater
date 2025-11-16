@@ -15,6 +15,7 @@ Automated tool to detect and update Intel chipset drivers to the latest versions
 - 🔄 **Smart Updates** - Offers driver updates when newer versions are available and allows reinstallation of current version
 - 💻 **Broad Compatibility** - Supports desktop, mobile, workstation, server, and embedded platforms
 - ⚡ **Easy to Use** - Simple batch file execution with automatic administrator elevation
+- 📊 **Comprehensive Database** - Based on analysis of 88 official Intel installer versions with 82,663 driver version comparisons
 
 ## 📋 Supported Platforms
 
@@ -24,17 +25,82 @@ Automated tool to detect and update Intel chipset drivers to the latest versions
 | 💻 **Mainstream Mobile** | 🗄️ **Server Platforms** | 🕰️ **Legacy Chipsets** |
 | **Core Ultra 200V**: Lunar Lake<br>**14th Gen**: Meteor Lake<br>**11th Gen**: Tiger Lake<br>**10th Gen**: Ice Lake, Comet Lake<br>**8th/9th Gen**: Coffee Lake<br>**7th Gen**: Kaby Lake<br>**6th Gen**: Skylake<br>**5th Gen**: Broadwell<br>**4th Gen**: Haswell, Crystal Well<br>**3rd Gen**: Ivy Bridge<br>**2nd Gen**: Sandy Bridge | **6th Gen Xeon**: Granite Rapids, Clearwater Forest<br>**5th Gen Xeon**: Emerald Rapids<br>**4th Gen Xeon**: Sapphire Rapids<br>**3rd Gen Xeon**: Ice Lake-SP<br>**2nd Gen Xeon**: Cascade Lake<br>**1st Gen Xeon**: Skylake-SP<br>**Older Xeon**: Broadwell-EP, Haswell-EP, Ivy Town, Sandy Bridge-EP | **100 Series**: Sunrise Point<br>**9 Series**: Wildcat Point<br>**8 Series**: Lynx Point<br>**7 Series**: Panther Point<br>**6 Series**: Cougar Point |
 
-## 🚀 Quick Start
+## 🛠️ Installation & Usage
 
-### Method 1: Automated Batch File (Recommended)
-1. Download the latest release from the [Releases page](https://github.com/FirstEver-eu/Intel-Chipset-Driver-Updater/releases)
-2. Extract the ZIP file to your desired location
-3. Run `Update-Intel-Chipset.bat` as Administrator
-4. Follow the on-screen instructions
+### Option 1: Simple Batch File (Recommended)
+1. Download both `Universal-Intel-Chipset-Updater.bat` and `Universal-Intel-Chipset-Updater.ps1`
+2. Place both files in the same directory
+3. Run `Universal-Intel-Chipset-Updater.bat` as Administrator
+4. Follow the on-screen prompts to scan and update your drivers
 
-### Method 2: Manual PowerShell
-```powershell
-# Run PowerShell as Administrator, then:
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-.\Update-Intel-Chipset.ps1
+### Option 2: Direct PowerShell
+1. Download `Universal-Intel-Chipset-Updater.ps1`
+2. Open PowerShell as Administrator
+3. Run: `powershell -ExecutionPolicy Bypass -File "Universal-Intel-Chipset-Updater.ps1"`
 
+## 🗃️ Driver Database
+
+This tool uses an extensive database built from analyzing **88 official Intel SetupChipset.exe installers**, spanning:
+
+- **Historical Coverage**: From version 10.0.13.0 (February 26, 2015) to 10.1.20314.8688 (August 14, 2025)
+- **Complete Hardware Support**: **82,663 driver version comparisons** across all HW_IDs used in Intel chipset drivers
+- **Multi-Platform**: Supports Consumer, Server, Workstation, and Mobile platforms
+
+## ⚠️ Important Notes
+
+- **Administrator Rights Required**: The script must be run as Administrator for proper functionality
+- **Restart Required**: A system restart is often necessary after driver installation
+- **Temporary Black Screen**: During PCIe bus driver updates, the screen may temporarily go black
+- **Device Reconnection**: Some devices may temporarily disconnect during installation
+- **Internet Connection Required**: Needed to download the latest driver information and packages
+
+## 🔧 Troubleshooting
+
+### Common Issues
+
+1. **"Script cannot run"** - Ensure you're running as Administrator and both files are in the same directory
+2. **"No Intel chipset found"** - Verify your system uses an Intel chipset (Sandy Bridge or newer)
+3. **Installation failures** - Check internet connection and temporary directory permissions
+
+### Debug Mode
+
+For detailed logging and troubleshooting, you can:
+1. Examine the script output for specific error messages
+2. Check Windows Device Manager for any devices with warning icons
+3. Verify the temporary directory `C:\Windows\Temp\IntelChipset` is accessible
+
+## 🤝 Contributing
+
+We welcome contributions! If you have:
+
+- New driver versions or platform information
+- Improvements to the detection logic
+- Bug fixes or feature enhancements
+
+Please feel free to submit a Pull Request or open an Issue.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## ⚠️ Disclaimer
+
+This tool is not affiliated with Intel Corporation. Drivers are sourced from official Intel servers. Use at your own risk. Always backup your system before updating drivers.
+
+## 📞 Support
+
+- **Repository**: [https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater)
+- **Issues**: [GitHub Issues](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues)
+## 🧑‍💻 Author/Maintainer
+
+**Marcin Grygiel**
+- 🌐 **Website**: [www.firstever.tech](https://www.firstever.tech)
+- 💼 **LinkedIn**: [Marcin Grygiel](https://www.linkedin.com/in/marcin-grygiel/)
+- 🔧 **GitHub**: [FirstEverTech](https://github.com/FirstEverTech)
+- 💖 **Support**: [PayPal](https://paypal.me/YourPayPalLink) | [Buy Me a Coffee](https://buymeacoffee.com/firstevertech)
+
+Your support helps maintain and improve this project for everyone!
+
+---
+
+**Note**: This tool is provided as-is for educational and convenience purposes. While we strive for accuracy, always verify critical driver updates through official channels.
