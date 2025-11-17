@@ -4,6 +4,7 @@
 [![GitHub license](https://img.shields.io/github/license/FirstEverTech/Universal-Intel-Chipset-Updater)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/FirstEverTech/Universal-Intel-Chipset-Updater)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues)
 [![Windows](https://img.shields.io/badge/Windows-10%2B-blue)](https://www.microsoft.com/windows)
+[![VirusTotal](https://img.shields.io/badge/VirusTotal-0%2F98-green)](https://www.virustotal.com/gui/url/8b9bef806321359355f6c0a12709d84d21acb600964a5ec8bd53cf9422b1cd04?nocache=1)
 
 Automated tool to detect and update Intel chipset drivers to the latest versions. Supports all Intel platforms from Sandy Bridge (2nd Gen) to the latest Panther Lake (15th Gen).
 
