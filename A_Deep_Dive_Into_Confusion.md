@@ -149,7 +149,7 @@ After that, I created an updater tool that uses the data from this list — avai
 
 ## 🧠 Final Thoughts
 
-Below is my current working list of the last-known Intel Chipset INF versions per platform.  
+Below is my current working list of the last-known Intel Chipset Driver Software versions per platform.  
 If you notice any inconsistencies or errors, please report them — these will help improve the accuracy of this list.
 
 📘 **Full detailed version matrix:**  
