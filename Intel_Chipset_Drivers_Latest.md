@@ -1,4 +1,4 @@
-# Intel Chipset Drivers List
+# Intel Chipset INFs List
 
 <!--
 # Future/Unreleased Intel Platforms
@@ -50,7 +50,7 @@
 |--------|---------|---------|------|--------|
 | PantherLakeSystem.inf | 10.1.20256.8665 | 10.1.56.21 | 17/06/2025\* | E300, E301, E302, E303, E304, E305, E306, E307, E308, E309, E30A, E30B, E30C, E30D, E30E, E30F, E310, E311, E312, E313, E314, E315, E316, E317, E318, E319, E31A, E31B, E31C, E31D, E31E, E31F, E322, E323, E348, E362, E363, E37F, E400, E401, E402, E403, E404, E405, E406, E407, E408, E409, E40A, E40B, E40C, E40D, E40E, E40F, E410, E411, E412, E413, E414, E415, E416, E417, E418, E419, E41A, E41B, E41C, E41D, E41E, E41F, E422, E423, E448, E44A, E462, E463, E471 |
 
-*Note: Panther Lake platforms are future releases and currently not detected by public drivers.*
+*Note: Panther Lake platforms are future releases and currently not detected by public INF files.*
 
 #### Arrow Lake
 **Generation:** 14th Gen (Arrow Lake) – Desktop/Mobile
@@ -429,8 +429,8 @@
 
 ---
 
-**Note on package versions:** Intel occasionally releases driver packages in two variants: consumer and server. Each variant may provide drivers for different devices. In this list, we denote the server variant with the `(S)` suffix to distinguish it from the consumer version.
+**Note on package versions:** Intel occasionally releases INFs packages in two variants: consumer and server. Each variant may provide INF files for different devices. In this list, we denote the server variant with the `(S)` suffix to distinguish it from the consumer version.
 
-Drivers marked with `*` indicate that no date was embedded in the driver, so the system automatically assigned the default minimal date — 18/07/1968. An approximate release date is provided based on the certificate timestamp found in the driver installer.
+INFs marked with `*` indicate that no date was embedded in the INFs, so the system automatically assigned the default minimal date — 18/07/1968. An approximate release date is provided based on the certificate timestamp found in the Intel Chipset Device Software installer.
 
 **Source:** [Intel Chipset Driver Updater](https://github.com/FirstEver-eu/Intel-Chipset-Updater/blob/main/Intel_Chipsets_Drivers_Latest.md) / **Project by:** [Marcin Grygiel](https://www.linkedin.com/in/marcin-grygiel/) / **Last Update:** 2025-11-12
