@@ -51,7 +51,7 @@ Automated tool to detect and update Intel chipset drivers to the latest versions
 
 For a comprehensive list of reported issues, workarounds, and solutions, please see our dedicated documentation:
 
-📄 [**Known_Issues.md**](Known_Issues.md) - Complete list of known bugs and their fixes
+📄 [**KNOWN_ISSUES.md**](KNOWN_ISSUES.md) - Complete list of known bugs and their fixes
 
 *This document is regularly updated as new issues are reported and resolved.*
 
