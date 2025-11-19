@@ -47,6 +47,28 @@ Automated tool to detect and update Intel chipset drivers to the latest versions
 2. Open PowerShell as Administrator
 3. Run: `powershell -ExecutionPolicy Bypass -File "Universal-Intel-Chipset-Updater.ps1"`
 
+## 🐛 Known Issues & Solutions
+
+### Issue #1: Touchpad Stops Working After Chipset Update
+**Symptoms**: Touchpad becomes unresponsive after updating chipset drivers on specific Lenovo ThinkPad models (T480, T480s)
+**Cause**: Chipset driver update may interfere with touchpad driver functionality
+**Solution**:
+1. Reinstall the appropriate touchpad driver for your model:
+   - **ELAN UltraNav Driver** (for ThinkPad T480s): [Download n22ga09w.exe](https://download.lenovo.com/pccbbs/mobiles/n22ga09w.exe)
+   - **Synaptics UltraNav Driver** (for ThinkPad T480): [Download n23gz21w.exe](https://download.lenovo.com/pccbbs/mobiles/n23gz21w.exe)
+2. Run the downloaded installer as Administrator
+3. Restart your system after installation
+
+### Issue #2: PowerShell Execution Policy Restriction
+**Symptoms**: Error message: `File C:\Windows\Temp\Universal-Intel-Chipset-Updater.ps1 cannot be loaded because running scripts is disabled on this system`
+**Cause**: Windows blocks PowerShell scripts by default for security reasons
+**Solution**:
+**Option 1: Permanent Fix**
+1. Run PowerShell as Administrator
+2. Execute this command:
+   ```powershell
+   Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
 ## 🗃️ Driver Database & Hardware Compatibility
 
 **Complete HW_ID mapping available in:** [`Intel_Chipset_Drivers_Latest.md`](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/Intel_Chipset_Drivers_Latest.md)
