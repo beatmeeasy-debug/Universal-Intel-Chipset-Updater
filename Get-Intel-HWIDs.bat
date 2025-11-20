@@ -11,7 +11,7 @@ echo /**************************************************************************
 echo **                  INTEL CHIPSET HWIDs DETECTION TOOL                   **
 echo ** --------------------------------------------------------------------- **
 echo **                                                                       **
-echo **         Detects Intel hardware IDs for platform identification        **
+echo **         Detects Intel Hardware IDs for platform identification        **
 echo **            and creates a report in Intel_HWIDs_Report.txt             **
 echo **                                                                       **
 echo **              Author: Marcin Grygiel / www.firstever.tech              **
