@@ -95,12 +95,12 @@ function Get-CurrentINFVersion {
     } catch {
         # Fallback to WMI if the above fails
         try {
-            $driverInfo = Get-CimInstance -ClassName Win32_PnPSignedINF | Where-Object { 
+            $infInfo = Get-CimInstance -ClassName Win32_PnPSignedINF | Where-Object { 
                 $_.DeviceID -eq $deviceInstanceId -and $_.INFVersion
             } | Select-Object -First 1
 
-            if ($driverInfo) {
-                return $driverInfo.INFVersion
+            if ($infInfo) {
+                return $infInfo.INFVersion
             }
         } catch {
             # Ignore errors
@@ -222,7 +222,7 @@ function Parse-ChipsetINFsFromMarkdown {
                 # Parse table row
                 $columns = ($dataLine -split '\|' | ForEach-Object { $_.Trim() }) | Where-Object { $_ }
                 if ($columns.Count -ge 5) {
-                    $driver = $columns[0]
+                    $inf = $columns[0]
                     $package = $columns[1]
                     $version = $columns[2]
                     $date = $columns[3] -replace '\\', ''  # Remove backslash if present
@@ -234,7 +234,7 @@ function Parse-ChipsetINFsFromMarkdown {
                                 Platform = $currentPlatform
                                 Section = $sectionName
                                 Generation = $currentGeneration
-                                INF = $driver
+                                INF = $inf
                                 Package = $package
                                 Version = $version
                                 Date = $date
@@ -259,7 +259,7 @@ function Parse-DownloadList {
 
     foreach ($block in $blocks) {
         $name = $null
-        $driverVer = $null
+        $infVer = $null
         $link = $null
         $prefix = $null
         $variant = "Consumer" # Default value
@@ -269,7 +269,7 @@ function Parse-DownloadList {
             if ($line -match '^Name\s*=\s*(.+)') {
                 $name = $matches[1]
             } elseif ($line -match '^INFVer\s*=\s*[^,]+,([0-9.]+)') {
-                $driverVer = $matches[1]
+                $infVer = $matches[1]
             } elseif ($line -match '^Link\s*=\s*(.+)') {
                 $link = $matches[1]
             } elseif ($line -match '^Prefix\s*=\s*(.+)') {
@@ -279,11 +279,11 @@ function Parse-DownloadList {
             }
         }
 
-        if ($driverVer -and $link) {
-            $key = "$driverVer-$variant"
+        if ($infVer -and $link) {
+            $key = "$infVer-$variant"
             $downloadData[$key] = @{
                 Name = $name
-                INFVer = $driverVer
+                INFVer = $infVer
                 Link = $link
                 Prefix = $prefix
                 Variant = $variant
@@ -441,24 +441,24 @@ if ($detectedIntelChipsets.Count -eq 0) {
 
 Write-Host "Found $($detectedIntelChipsets.Count) Intel chipset device(s)" -ForegroundColor Green
 
-# Download latest driver information
-Write-Host "Downloading latest driver information..." -ForegroundColor Green
+# Download latest inf information
+Write-Host "Downloading latest inf information..." -ForegroundColor Green
 $chipsetInfo = Get-LatestINFInfo -Url $chipsetINFsUrl
 $downloadListInfo = Get-LatestINFInfo -Url $downloadListUrl
 
 if (-not $chipsetInfo -or -not $downloadListInfo) {
-    Write-Host "Failed to download driver information. Exiting." -ForegroundColor Red
+    Write-Host "Failed to download inf information. Exiting." -ForegroundColor Red
     Clear-TempINFFolders
     exit
 }
 
-# Parse driver information
-Write-Host "Parsing driver information..." -ForegroundColor Green
+# Parse inf information
+Write-Host "Parsing inf information..." -ForegroundColor Green
 $chipsetData = Parse-ChipsetINFsFromMarkdown -MarkdownContent $chipsetInfo
 $downloadData = Parse-DownloadList -DownloadListContent $downloadListInfo
 
 if ($chipsetData.Count -eq 0 -or $downloadData.Count -eq 0) {
-    Write-Host "Error: Could not parse driver information." -ForegroundColor Red
+    Write-Host "Error: Could not parse inf information." -ForegroundColor Red
     Clear-TempINFFolders
     exit
 }
@@ -638,21 +638,21 @@ if ($response -eq "Y" -or $response -eq "y") {
 
         if ($downloadData.ContainsKey($downloadKey)) {
             $downloadInfo = $downloadData[$downloadKey]
-            $driverPath = "$tempDir\$cleanPackageVersion-$variant"
+            $infPath = "$tempDir\$cleanPackageVersion-$variant"
 
             Write-Host "Downloading Intel Chipset Device Software $cleanPackageVersion ($variant)..." -ForegroundColor Green
-            if (Download-Extract-File -Url $downloadInfo.Link -OutputPath $driverPath -Prefix $downloadInfo.Prefix) {
+            if (Download-Extract-File -Url $downloadInfo.Link -OutputPath $infPath -Prefix $downloadInfo.Prefix) {
                 Write-Host "INF files downloaded and extracted successfully." -ForegroundColor Green
                 
-                if (Install-ChipsetINF -INFPath $driverPath -Prefix $downloadInfo.Prefix) {
+                if (Install-ChipsetINF -INFPath $infPath -Prefix $downloadInfo.Prefix) {
                     $successCount++
                     $processedPackages[$cleanPackageVersion] = $true
                     Write-Host "Successfully installed package $cleanPackageVersion for $($platforms.Count) platform(s)" -ForegroundColor Green
                 } else {
-                    Write-Host "Failed to install driver." -ForegroundColor Red
+                    Write-Host "Failed to install inf." -ForegroundColor Red
                 }
             } else {
-                Write-Host "Failed to download or extract driver." -ForegroundColor Red
+                Write-Host "Failed to download or extract inf." -ForegroundColor Red
             }
         } else {
             Write-Host "Error: Download information not found for package version $cleanPackageVersion (variant: $variant)" -ForegroundColor Red
@@ -662,7 +662,7 @@ if ($response -eq "Y" -or $response -eq "y") {
 
     if ($successCount -gt 0) {
         Write-Host "`nIMPORTANT NOTICE:" -ForegroundColor Yellow
-        Write-Host "Computer restart is required to complete driver installation!" -ForegroundColor Yellow
+        Write-Host "Computer restart is required to complete inf installation!" -ForegroundColor Yellow
         
         Write-Host "`nSummary: Installed $successCount unique package(s) for all detected platforms" -ForegroundColor Green
     } else {
