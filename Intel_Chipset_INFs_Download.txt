@@ -24,7 +24,7 @@ Variant = Consumer
 Link = https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/download/v10.1.20256.8665/intel_chipset_10.1.20256.8665.zip
 Prefix = \SetupChipset.exe
 SHA256 = F407E01D5E937C0EDDADE859E32F351962A1C7F695FEBF4965F2A0AF8BCC914F
-Backup = https://download1589.mediafire.com/en3sct5hvxdgH0SVniNqerwm3SAzBsxQ3jJ1lc6KgoZxKVINTIHgN-KcMhQ6xpp1kZMqFGGIIljxAxLwvDPQBXyHnrN9MUxbxFvzzeBKt-6QhszyJ2_s51cWpFnZbuvIioYak7ulhol1pgnRGZD97hMg77se560YQQDi8a2jU560sAI/npc9lyheq5iveof/intel_chipset_10.1.20256.8665.zip
+Backup = https://www.firstever.tech/download/intel_chipset_10.1.20256.8665.zip
 SHA256_B = F407E01D5E937C0EDDADE859E32F351962A1C7F695FEBF4965F2A0AF8BCC914F
 Prefix_B = \SetupChipset.exe
 
@@ -34,7 +34,7 @@ Variant = Consumer
 Link = https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/download/v10.1.19913.8607/intel_chipset_10.1.19913.8607.zip
 Prefix = \SetupChipset.exe
 SHA256 = F28148CE4B70FFB1DA9A6898A6624E7FFBF4C181CFC62F13263AD191CBBF8E50
-Backup = https://download938.mediafire.com/nh7k9l06h3vgAfnDgbQOnvdQqGUWZvTdUlqlLAieB7Y_lqpML0bhD6k8KuvUkoDM3Xk2rghN8XUhNYdxkUDyBv5PUKeozwDAdJuZaDdGLE3qssroOX8iDKJqZkYQfAsWupe1vs2316zaHmiryC_9v_V38kK9eOr90XCTJgkG9XwtUGo/9ni7xiazhvxm06f/intel_chipset_10.1.19913.8607.zip
+Backup = https://www.firstever.tech/download/intel_chipset_10.1.19913.8607.zip
 SHA256_B = F28148CE4B70FFB1DA9A6898A6624E7FFBF4C181CFC62F13263AD191CBBF8E50
 Prefix_B = \SetupChipset.exe
 
