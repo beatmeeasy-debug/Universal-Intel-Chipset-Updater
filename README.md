@@ -59,10 +59,10 @@ For a comprehensive list of reported issues, workarounds, and solutions, please 
 
 **Complete HWID mapping available in:** [`Intel_Chipset_INFs_Latest.md`](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/Intel_Chipset_INFs_Latest.md)
 
-This tool uses an extensive database built from analyzing **88 official Intel SetupChipset.exe installers**, spanning:
+This tool uses an extensive database built from analyzing **90 official Intel SetupChipset.exe installers**, spanning:
 
 - **Historical Coverage**: From version 10.0.13.0 (February 26, 2015) to 10.1.20314.8688 (August 14, 2025)
-- **Complete Hardware Support**: **82,663 INF version comparisons** across all HWIDs used in Intel chipset INFs
+- **Complete Hardware Support**: **86,783 INF version comparisons** across all HWIDs used in Intel chipset INFs
 - **Multi-Platform**: Supports Consumer, Server, Workstation, and Mobile platforms
 
 The comprehensive database includes:
