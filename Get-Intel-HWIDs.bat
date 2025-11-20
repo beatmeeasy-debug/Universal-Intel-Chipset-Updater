@@ -22,7 +22,7 @@ echo **         Drivers are sourced from official Intel servers.              **
 echo **         Use at your own risk.                                         **
 echo ** --------------------------------------------------------------------- **
 echo **                                                                       **
-echo **         GitHub.com/FirstEverTech/Universal-Intel-Chipset-Updater      **
+echo **    Visit: github.com/FirstEverTech/Universal-Intel-Chipset-Updater    **
 echo **                                                                       **
 echo *************************************************************************/
 echo.
