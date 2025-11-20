@@ -4,11 +4,11 @@ setlocal enabledelayedexpansion
 :: Intel Chipset Device Update Tool
 :: Requires administrator privileges
 
-:: Set console window size to 75 columns and 64 lines
-mode con: cols=75 lines=64
+:: Set console window size to 75 columns and 58 lines
+mode con: cols=75 lines=58
 
 echo /*************************************************************************
-echo **                    UNIVERSAL INTEL DEVICE UPDATER                     **
+echo **                UNIVERSAL INTEL CHIPSET DEVICE UPDATER                 **
 echo ** --------------------------------------------------------------------- **
 echo **                                                                       **
 echo **                     INFs Version: 10.1 (2025.11)                      **
