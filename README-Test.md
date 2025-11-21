@@ -148,8 +148,8 @@ For current limitations and workarounds, please see: [KNOWN_ISSUES.md](KNOWN_ISS
 
 `Security/`
 - [SECURITY.md](SECURITY.md) - Security policy
-- [SECURITY-AUDITS.md](SECURITY-AUDITS.md) - Security audits summary
-- [docs/audit-reports/](docs/audit-reports/) - Project Audits
+- [SECURITY-AUDITS.md](SECURITY-AUDITS.md) - Comprehensive security audits summary
+- [docs/audit-reports/](Docs/Audit-Reports/) - Detailed audit reports
 
 `Documentation/`
 - [Intel_Chipset_INFs_Latest.md](Intel_Chipset_INFs_Latest.md) - Latest INF database
