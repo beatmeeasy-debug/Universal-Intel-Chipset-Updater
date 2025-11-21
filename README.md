@@ -20,7 +20,7 @@ This project has undergone comprehensive analysis by multiple AI security expert
 
 | Auditor | Score | Key Assessment |
 |---------|-------|----------------|
-| **[Grok](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/Docs/Audit-Reports/2025-11-21-ChatGPT_Audit.md)** | 9.7/10 | *"Highest score ever given to a community driver utility - Safe for corporate deployment"* |
+| **[Grok](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/Docs/Audit-Reports/2025-11-21-Grok_Audit.md)** | 9.7/10 | *"Highest score ever given to a community driver utility - Safe for corporate deployment"* |
 | **[ChatGPT](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/Docs/Audit-Reports/2025-11-21-ChatGPT_Audit.md)** | 9.4/10 | *"Safest, most stable, and most professionally engineered version"* |
 | **[Gemini](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/Docs/Audit-Reports/2025-11-21-Gemini_Audit.md)** | 9.0/10 | *"Exceeds standards expected of community-developed tools"* |
 | **[Copilot](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/Docs/Audit-Reports/2025-11-21-Copilot_Audit.md)** | 8.6/10 | *"Strong project with excellent transparency and security improvements"* |
