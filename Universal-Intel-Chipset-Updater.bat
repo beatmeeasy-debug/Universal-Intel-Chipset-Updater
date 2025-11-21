@@ -11,7 +11,7 @@ echo /*************************************************************************
 echo **                UNIVERSAL INTEL CHIPSET DEVICE UPDATER                 **
 echo ** --------------------------------------------------------------------- **
 echo **                                                                       **
-echo **                     INFs Version: 10.1 (2025.11)                      **
+echo **                     INFs Version: 10.1 (2025.11.5)                    **
 echo **                                                                       **
 echo **              Author: Marcin Grygiel / www.firstever.tech              **
 echo **                                                                       **
