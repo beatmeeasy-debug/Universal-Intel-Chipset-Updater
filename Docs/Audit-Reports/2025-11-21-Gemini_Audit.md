@@ -58,7 +58,7 @@ The primary risk, inherent to any driver utility, lies in the requirement for **
 The release notes indicate this is a significant, stable milestone:
 
 * **Scope:** Supports an extremely wide range of hardware (Sandy Bridge/2nd Gen to Panther Lake/15th Gen). This "universal" claim is heavily supported by the database depth.
-* **Database Strength:** The core strength is the **"Comprehensive Driver Database"** built from analyzing 88 official Intel installers and tracking **82,663 driver version comparisons**. This depth of data research is far beyond a simple script and is the project's most impressive technical feature.
+* **Database Strength:** The core strength is the **"Comprehensive Driver Database"** built from analyzing 90 official Intel installers and tracking **86,783 driver version comparisons**. This depth of data research is far beyond a simple script and is the project's most impressive technical feature.
 * **Methodology:** Confirmed downloading from "Direct Intel Sources" and using "Safe Installation" parameters (official Intel setup arguments). This is critical for system stability.
 * **Summary:** `v10.1-2025.11.5` represents a well-researched, stable, and highly functional version built on a robust, manually curated data set.
 
@@ -74,3 +74,4 @@ Based on its technical complexity, exceptional documentation, proactive security
 
 * **9 Points:** For exceptional organization, deep research (the database effort), high transparency (security docs, download links), and a robust technical implementation (dual-script, safe installation methods).
 * **Deduction (1 Point):** The deduction reflects the inherent risk of any third-party, Administrator-level tool, regardless of how well-audited it is. A true 10/10 rating would require a formal, independently certified security audit.
+
