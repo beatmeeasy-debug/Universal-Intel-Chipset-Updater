@@ -87,7 +87,7 @@ Więc to zautomatyzowałem.
 
 ---
 
-## 🚀 4. Uniwersalny Aktualizator Sterowników Chipsetu Intel — Rozwiązanie
+## 🚀 4. Universal Intel Chipset Driver Updater — Rozwiązanie
 
 Moje narzędzie porównuje zainstalowane wersje INF z globalną bazą danych i instaluje najnowszą prawidłową wersję dla Twoich dokładnych identyfikatorów sprzętowych.
 
