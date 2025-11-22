@@ -34,8 +34,7 @@ Publiczne pakiety Intela pokazują wersje takie jak:
 - Niektóre wersje istnieją w pięciu różnych wariantach, wszystkie podpisane cyfrowo przez Intela — ale o różnych zawartościach.
 
 To był moment, w którym zdałem sobie sprawę:  
-Oprogramowanie Intel Chipset Device Software nie jest pakietem sterowników.  
-To muzeum historii zapakowane w archiwum ZIP.
+Oprogramowanie Intel Chipset Device Software nie jest pakietem sterowników. To muzeum historii zapakowane w archiwum ZIP.
 
 ---
 
