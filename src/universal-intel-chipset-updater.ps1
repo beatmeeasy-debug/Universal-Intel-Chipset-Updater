@@ -17,8 +17,8 @@ $DebugMode = 0  # 0 = Disabled, 1 = Enabled
 
 # GitHub repository URLs
 $githubBaseUrl = "https://raw.githubusercontent.com/FirstEverTech/Universal-Intel-Chipset-Updater/main/"
-$chipsetINFsUrl = $githubBaseUrl + "INTEL_CHIPSET_INFS_LATEST.md"
-$downloadListUrl = $githubBaseUrl + "INTEL_CHIPSET_INFS_DOWNLOAD.txt"
+$chipsetINFsUrl = $githubBaseUrl + "data/intel_chipset_infs_latest.md"
+$downloadListUrl = $githubBaseUrl + "data/intel-chipset-infs-download.txt"
 
 # Temporary directory for downloads
 $tempDir = "C:\Windows\Temp\IntelChipset"
@@ -1085,7 +1085,7 @@ try {
                 }
             } else {
                 Write-Host "Error: Download information not found for package version $cleanPackageVersion (variant: $variant)" -ForegroundColor Red
-                Write-Host "Please check INTEL_CHIPSET_INFS_DOWNLOAD.txt for missing entries." -ForegroundColor Yellow
+                Write-Host "Please check intel_chipset_infs_download.txt for missing entries." -ForegroundColor Yellow
                 Write-DebugMessage "Download key not found: $downloadKey"
             }
         }
