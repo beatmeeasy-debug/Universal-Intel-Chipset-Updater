@@ -67,8 +67,7 @@ Oficjalny instalator Intela to w istocie:
 - generyczna nakładka
 - zawierająca setki plików INF
 - instalująca tylko mały ich podzbiór
-- i po cichu pomijająca resztę,  
-szczególnie na starszych platformach (X79, C600, QM77, HM65, itp.)
+- i po cichu pomijająca resztę, szczególnie na starszych platformach (X79, C600, QM77, HM65, itp.)
 
 Co gorsza:
 
