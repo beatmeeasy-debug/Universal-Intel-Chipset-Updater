@@ -46,12 +46,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Workstation/Enthusiast systems (Core-X, HEDT)
   - Xeon/Server platforms
   - Atom/Low-Power devices
-- **Extensive Driver Database**: Built from 90 official Intel `SetupChipset.exe` installers
+- **Extensive INF Database**: Built from 90 official Intel `SetupChipset.exe` installers
   - Historical coverage: v10.0.13.0 (February 26, 2015) to v10.1.20314.8688 (August 14, 2025)
-  - 86,783 driver version comparisons across all HW_IDs
+  - 86,783 INF version comparisons across all HW_IDs
   - Complete chipset family support
-- **Direct Intel Sources**: Official driver downloads from Intel's download servers
-- **Smart Version Management**: Automatic comparison between current and latest available drivers
+- **Direct Intel Sources**: Official INF downloads from Intel's download servers
+- **Smart Version Management**: Automatic comparison between current and latest available INFs
 - **Safe Installation Parameters**: Intel-approved installation flags with proper error handling
 - **Dual-Script Architecture**: 
   - Batch file (`Universal-Intel-Chipset-Updater.bat`) for UAC elevation
@@ -110,4 +110,4 @@ If you encounter any issues or have questions about a specific release:
 
 ---
 
-**Note**: This project is independent and not affiliated with Intel Corporation. All driver packages are official Intel releases downloaded from Intel's servers.
+**Note**: This project is independent and not affiliated with Intel Corporation. All INF packages are official Intel releases downloaded from Intel's servers.
