@@ -143,7 +143,7 @@ Use the **Feature Request** issue template and include:
 **Problem**: Users cannot easily share or analyze their chipset configuration
 
 **Proposed Solution**: 
-Add a `-ExportCSV` parameter that saves detected HWIDs and driver versions to a CSV file
+Add a `-ExportCSV` parameter that saves detected HWIDs and INF versions to a CSV file
 
 **Use Cases**:
 - IT administrators managing multiple systems
