@@ -68,8 +68,7 @@ Intel’s official installer is essentially:
 - a generic wrapper
 - containing hundreds of INF files
 - installing only a small subset
-- and silently ignoring the rest  
-especially on older platforms (X79, C600, QM77, HM65, etc.)
+- and silently ignoring the rest, especially on older platforms (X79, C600, QM77, HM65, etc.)
 
 Worse:
 
