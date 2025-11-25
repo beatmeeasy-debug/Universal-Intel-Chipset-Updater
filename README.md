@@ -14,18 +14,27 @@
 
 **Universal Intel Chipset Updater** is an advanced, security-focused tool that automatically detects your Intel hardware and installs the latest official chipset **INF files** with enterprise-grade safety measures.
 
-## 🎉 Latest Release Highlights (v10.1-2025.11.6)
+## 🎉 Latest Release Highlights (v10.1-2025.11.7 & v10.1-2025.11.6)
 
-### 🆕 New Security Features
+### 🆕 New Security & User Experience Features
 - **Self-Hash Verification** - Tool now validates its own integrity before execution
 - **Automatic Update Detection** - Seamless update checking and download to Downloads folder
 - **Digital Signature** - SFX EXE signed with FirstEver.tech certificate
 - **Phased Execution** - Clear separation of verification, detection, download, and installation
+- **Final Credits Screen** - New thank you screen with project information and support message
+- **Streamlined Exit Flow** - Consistent pause and credits screen across all termination paths
 
 ### 🔒 Enhanced Security
 - Multi-layer integrity verification (Hash + Digital Signature + Certificate Chain)
 - Smart version comparison prevents false update prompts
 - Improved error handling throughout all execution phases
+- Maintained integrity checks and secure temporary file handling
+
+### 🎨 Improved User Experience
+- Removed duplicate pauses for cleaner flow
+- Automatic closure after credits screen
+- Consolidated cleanup with improved messaging
+- Consistent flow: operation summary → pause → credits → auto-close
 
 ## 🔍 Independent Security Audits
 
