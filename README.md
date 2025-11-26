@@ -12,7 +12,7 @@
 
 ## 🔧 Automate Your Intel Chipset Updates
 
-**Universal Intel Chipset Updater** is an advanced, security-focused tool that automatically detects your Intel hardware and installs the latest official chipset **INF files** with enterprise-grade safety measures.
+**Universal Intel Chipset Device Updater** is an advanced, security-focused tool that automatically detects your Intel hardware and installs the latest official chipset **INF files** with enterprise-grade safety measures.
 
 ## 🎉 Latest Release Highlights (v10.1-2025.11.7)
 
