@@ -114,9 +114,10 @@ This project has undergone comprehensive analysis by multiple AI security expert
 
 ### Method 1: One-Click Execution
 ```batch
-# Download and run as Administrator
+# Download and run executable file as Administrator:
 ChipsetUpdater-10.1-2025.11.7-Win10-Win11.exe (or later version)
-Optionally, download .ps1 and .bat files, then run as Administrator BATCH file:
+
+# Optionaly, download .ps1 and .bat files, then run BATCH file as Administrator:
 .\Universal-Intel-Chipset-Updater.bat
 
 ```
