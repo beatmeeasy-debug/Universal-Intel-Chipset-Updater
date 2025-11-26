@@ -55,8 +55,8 @@ This project has undergone comprehensive analysis by multiple AI security expert
 
 | Phase 1 | Phase 2 | Phase 3 | Phase 4 |
 |:---------------:|:--------------:|:-------------------:|:-------------------:|
-| ![Hardware Detection](assets/1-security.png) | ![Security Check](assets/1-security.png) | ![Update Process](assets/3-backup.png) | ![Update Process](assets/4-install.png) |
-| *Security Check and Update Check* | *Hardware Detection and Version Analysis* | *Creating a System Restore Point* | *Download, Vrify and Install* |
+| ![Hardware Detection](assets/1-security.png) | ![Security Check](assets/1-detection.png) | ![Update Process](assets/3-backup.png) | ![Update Process](assets/4-install.png) |
+| *Security Check and Update Check* | *Hardware Detection and Version Analysis* | *Creating a System Restore Point* | *Download, Verify and Install* |
 
 
 ## ✨ Key Features
@@ -242,9 +242,11 @@ For current limitations and workarounds, please see: [KNOWN_ISSUES.md](KNOWN_ISS
   - [2025-11-21-GROK-AUDIT.md](docs/audit-reports/2025-11-21-GROK-AUDIT.md)
 
 `assets/` - Screenshots
-- [screenshot-detection.png](assets/screenshot-detection.png)
-- [screenshot-security.png](assets/screenshot-security.png)
-- [screenshot-update.png](assets/screenshot-update.png)
+
+- [1-security.png](assets/1-security.png)
+- [2-detection.png](assets/2-detection.png)
+- [3-backup.png](assets/3-backup.png)
+- [4-install.png](assets/4-install.png)
 
 `ISSUE_TEMPLATE/` - Issue templates
 - [bug_report.md](ISSUE_TEMPLATE/bug_report.md) - Bug report template
