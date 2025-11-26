@@ -56,7 +56,7 @@ This project has undergone comprehensive analysis by multiple AI security expert
 | Phase 1 | Phase 2 | Phase 3 | Phase 4 |
 |:---------------:|:--------------:|:-------------------:|:-------------------:|
 | ![Hardware Detection](assets/1-security.png) | ![Security Check](assets/1-security.png) | ![Update Process](assets/3-backup.png) | ![Update Process](assets/4-install.png) |
-| *Initialization and Security Check* | *Hardware Detection and Version Analysis* | *Creating a System Restore Point* | *Download and Installation* |
+| *Security Check and Update Check* | *Hardware Detection and Version Analysis* | *Creating a System Restore Point* | *Download, Vrify and Install* |
 
 
 ## ✨ Key Features
