@@ -62,6 +62,17 @@ The Intel Chipset Device Software installs the Windows INF files. An INF is a te
 | ArrowLakeSystem.inf | 10.1.20266.8668 | 10.1.57.5 | 27/06/2025\* | 7722, 7723, 7771 |
 
 #### Meteor Lake
+**Generation:** 14th Gen (Meteor Lake) – Desktop (Windows 11 24H2 Inbox only)
+
+| INF | Package | Version | Date | HWIDs |
+|--------|---------|---------|------|--------|
+| MeteorLakeSystem.inf | None | 10.1.47.12 | 27/06/2025\* | 7E24, AE24 |
+| MeteorLakePCH-SSystem.inf | None | 10.1.51.8 | 27/06/2025\* | 7F2F, 7F58, 7F59, 7F69 |
+| MeteorLakeSystemNorthPeak.inf | None | 10.1.47.12 | 27/06/2025\* | 7E24, AE24 |
+
+*Note: All desktop Meteor Lake devices are supported only via Windows 11 24H2 inbox drivers; these HWIDs are not included in any Intel Chipset Device Software package.*
+
+#### Meteor Lake
 **Generation:** 14th Gen (Meteor Lake) – Mobile
 
 | INF | Package | Version | Date | HWIDs |
