@@ -172,8 +172,8 @@ One of the most surprising findings was the internal inconsistency in Intel’s 
 
 **Example:**
 
-- 10.1.2.19 (2016) is older
-- 10.1.1.36 (2016) is newer
+- 10.1.2.86 (2017) is older
+- 10.1.18981.6008 (2021) is newer
 
 Both share identical version numbers across different packages.  
 OEM versions differ in size, INF count, and contents.  
