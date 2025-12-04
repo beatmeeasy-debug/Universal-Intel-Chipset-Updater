@@ -11,7 +11,6 @@
 [![Issues](https://img.shields.io/github/issues/FirstEverTech/Universal-Intel-Chipset-Updater?style=for-the-badge)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues)
 [![VirusTotal](https://img.shields.io/badge/VirusTotal-0%2F98-008631?style=for-the-badge)](https://www.virustotal.com/gui/url/df2dce8042ae4e9e7289aefc095e55361414c7f9d305db061ec7d52c0e7f9f9d)
 
-<a id="universal_intel_chipset_device_updater"></a>
 ## 🔧 Automate Your Intel Chipset Updates
 
 **Universal Intel Chipset Device Updater** is an advanced, security-focused tool that automatically detects your Intel hardware and installs the latest official chipset **INF files** with enterprise-grade safety measures.
@@ -20,7 +19,7 @@
 
 # 📑 Table of Contents
 
-1. [**Universal Intel Chipset Device Updater**](#universal_intel_chipset_device_updater)  
+1. [**Universal Intel Chipset Device Updater**](#top)  
 2. [**Table of Contents**](#table_of_contents)  
 3. [**Latest Release Highlights**](#latest-release-highlights)  
    3.1 [New Features & Improvements](#new-features-improvements)  
