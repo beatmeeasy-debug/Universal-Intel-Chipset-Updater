@@ -40,11 +40,11 @@
    8.2 [Method 2: PowerShell Direct](#method-2-powershell-direct)  
    8.3 [Method 3: Hardware ID Scanner Only](#method-3-hardware-id-scanner-only)  
 9. [**How It Works**](#how-it-works)  
-   9.1 [Self-Verification & Update Check](#1-self-verification-update-check)  
-   9.2 [Hardware Detection](#2-hardware-detection)  
-   9.3 [Database Query & Matching](#3-database-query-matching)  
-   9.4 [Security Verification](#4-security-verification)  
-   9.5 [Installation & Cleanup](#5-installation-cleanup)  
+   9.1 [Self-Verification & Update Check](#self-verification-update-check)  
+   9.2 [Hardware Detection](#hardware-detection)  
+   9.3 [Database Query & Matching](#database-query-matching)  
+   9.4 [Security Verification](#security-verification)  
+   9.5 [Installation & Cleanup](#installation-cleanup)  
 10. [**Security First Approach**](#security-first-approach)  
    10.1 [Verified Security Layers](#verified-security-layers)  
 11. [**Usage Scenarios**](#usage-scenarios)  
@@ -96,23 +96,23 @@
 
 <a id="latest-release-highlights"></a>
 ## 🎉 **2. Latest Release Highlights (v10.1-2025.11.8)**
-
+<a id="new-features-improvements"></a>
 ### 🆕 2.1 New Features & Improvements
 - **Enhanced platform detection**: Added automatic detection for Intel platforms that use Windows 11 24H2 inbox drivers (e.g., Meteor Lake)
 - **Improved user communication**: Clear informational messages when Windows inbox drivers are detected
 - **Smart exclusion system**: Platforms with `Package = None` in the database are automatically excluded from updates
 - **Better date handling**: Windows inbox driver dates now use digital signature dates from corresponding .cat files
-
+<a id="technical-updates"></a>
 ### 🔧 2.2 Technical Updates
 - **Updated parsing logic**: Script now identifies Windows inbox-only platforms during hardware detection
 - **Enhanced error handling**: Improved debug messages and logging for platform detection
 - **Streamlined user experience**: Separate section for Windows inbox platforms in the output
-
+<a id="notes"></a>
 ### 📝 2.3 Notes
 - **No INF database changes**: This update only improves the detection and handling logic
 - **Backward compatible**: Fully compatible with existing INF database format
 - **Future-proof**: Automatically handles new platforms marked with `Package = None`
-
+<a id="bug-fixes"></a>
 ### 🐛 2.4 Bug Fixes
 - Fixed potential false positives for unsupported platforms
 - Improved handling of platforms without separate Intel Chipset Device Software packages
@@ -153,27 +153,27 @@ This project has undergone comprehensive analysis by multiple AI security expert
 
 <a id="key-features"></a>
 ## ✨ **5. Key Features**
-
+<a id="smart-hardware-detection"></a>
 ### 🔍 5.1 Smart Hardware Detection
 - Automatically scans for Intel chipset components
 - Identifies specific Hardware IDs (HWIDs)
 - Supports chipsets from Sandy Bridge to latest generations
 - Detects both Consumer and Server platforms
-
+<a id="multi-layer-security"></a>
 ### 🛡 5.2 Multi-Layer Security
 - **SHA-256 Hash Verification** for all downloads
 - **Digital Signature Validation** (Intel Corporation certificates)
 - **Automated System Restore Points** before installation
 - **Dual-Source Download** with backup fallback
 - **Administrator Privilege Enforcement**
-
+<a id="seamless-operation"></a>
 ### ⚡ 5.3 Seamless Operation
 - No installation required - fully portable
 - Automatic version checking and updates
 - Clean, intuitive user interface
 - Detailed logging and debug mode
 - Save to Downloads folder option
-
+<a id="comprehensive-coverage"></a>
 ### 🔄 5.4 Comprehensive Coverage
 - Mainstream Desktop/Mobile platforms
 - Workstation/Enthusiast systems
@@ -216,7 +216,7 @@ This project has undergone comprehensive analysis by multiple AI security expert
 
 <a id="quick-start"></a>
 ## 🚦 **8. Quick Start**
-
+<a id="method-1-one-click-execution"></a>
 ### 8.1 Method 1: One-Click Execution
 ```batch
 # Download and run executable file as Administrator:
@@ -226,13 +226,13 @@ ChipsetUpdater-10.1-2025.11.7-Win10-Win11.exe (or later version)
 Universal-Intel-Chipset-Updater.bat
 
 ```
-
+<a id="method-2-powershell-direct"></a>
 ### 8.2 Method 2: PowerShell Direct
 ```powershell
 # Run PowerShell as Administrator, then:
 .\Universal-Intel-Chipset-Updater.ps1
 ```
-
+<a id="method-3-hardware-id-scanner-only"></a>
 ### 8.3 Method 3: Hardware ID Scanner Only
 ```batch
 # For diagnostic purposes
@@ -244,28 +244,28 @@ Get-Intel-HWIDs.bat
 
 <a id="how-it-works"></a>
 ## 🔧 **9. How It Works**
-
+<a id="self-verification-update-check"></a>
 ### 🔒 9.1 Self-Verification & Update Check
 - **Integrity Verification** - Validates script hash against GitHub release
 - **Update Detection** - Compares current version with latest available
 - **Security First** - Ensures tool hasn't been modified or corrupted
-
+<a id="hardware-detection"></a>
 ### 🔍 9.2 Hardware Detection
 - Scans PCI devices for Intel Vendor ID (8086)
 - Identifies chipset-related components
 - Extracts Hardware IDs and current driver versions
-
+<a id="database-query-matching"></a>
 ### 📊 9.3 Database Query & Matching
 - Downloads latest INF database from GitHub
 - Matches detected HWIDs with compatible packages
 - Compares current vs latest versions
-
+<a id="security-verification"></a>
 ### 🛡 9.4 Security Verification
 - Creates system restore point automatically
 - Downloads from primary/backup sources
 - Verifies SHA-256 hashes
 - Validates Intel digital signatures
-
+<a id="installation-cleanup"></a>
 ### ⚡ 9.5 Installation & Cleanup
 - Executes official Intel setup with safe parameters
 - Provides real-time progress feedback
@@ -276,7 +276,7 @@ Get-Intel-HWIDs.bat
 
 <a id="security-first-approach"></a>
 ## 🛡 **10. Security First Approach**
-
+<a id="verified-security-layers"></a>
 ### 🔒 10.1 Verified Security Layers
 ```text
 1. Self-Integrity → Script Hash Verification
@@ -294,17 +294,17 @@ Get-Intel-HWIDs.bat
 
 <a id="usage-scenarios"></a>
 ## 🎯 **11. Usage Scenarios**
-
+<a id="home-users"></a>
 ### 🏠 11.1 Home Users
 - **Keep system updated** without technical knowledge
 - **Automatic safety checks** prevent installation issues
 - **One-click operation** with clear prompts
-
+<a id="it-professionals-technicians"></a>
 ### 💼 11.2 IT Professionals & Technicians
 - **Batch deployment** across multiple systems
 - **Comprehensive logging** for troubleshooting
 - **Security verification** for corporate environments
-
+<a id="system-builders"></a>
 ### 🛠 11.3 System Builders
 - **Pre-installation preparation** for new builds
 - **Driver consistency** across multiple systems
@@ -315,22 +315,26 @@ Get-Intel-HWIDs.bat
 
 <a id="download-options"></a>
 ## 📥 **12. Download Options**
-
+<a id="option-1-sfx-executable-recommended"></a>
 ### 12.1 Option 1: SFX Executable (Recommended)
 - **File**: `ChipsetUpdater-10.1-2025.11.6-Win10-Win11.exe`
 - **Features**: Digital signature, one-click execution, automatic extraction
 - **For**: Most users, easiest method
-
+<a id="option-2-script-bundle"></a>
 ### 12.2 Option 2: Script Bundle
 - **Files**: `universal-intel-chipset-updater.bat` + `universal-intel-chipset-updater.ps1`
 - **Features**: Full control, modifiable code, transparency
 - **For**: Advanced users, customization
-
+<a id="option-3-source-code"></a>
 ### 12.3 Option 3: Source Code
 - **Method**: `git clone` the repository
 - **Features**: Latest development version, full customization
 - **For**: Developers, contributors
 
+
+[↑ Back to top](#top)
+
+<a id="independent-audit-results"></a>
 ## 📊 **13. Independent Audit Results**
 
 This project has been thoroughly audited by 6 independent AI security experts, achieving an average score of 9.1/10. Multiple auditors confirmed it's the safest and most stable version ever released, suitable for daily use, corporate deployment, and technician toolkits.
@@ -398,17 +402,17 @@ For current limitations and workarounds, please see: [KNOWN_ISSUES.md](KNOWN_ISS
 ## 📦 **15. Release Structure**
 
 Each version (v10.1-2025.11.6) includes:
-
+<a id="primary-files"></a>
 ### 15.1 Primary Files
 - `ChipsetUpdater-10.1-2025.11.6-Win10-Win11.exe` - Main executable (digitally signed)
 - `universal-intel-chipset-updater.bat` - Batch wrapper
 - `universal-intel-chipset-updater.ps1` - PowerShell script
-
+<a id="verification-files"></a>
 ### 15.2 Verification Files  
 - `ChipsetUpdater-10.1-2025.11.6-Win10-Win11.sha256` - EXE hash
 - `universal-intel-chipset-updater-10.1-2025.11.6-ps1.sha256` - PS1 script hash
 - `FirstEver.tech.cer` - Digital certificate
-
+<a id="documentation"></a>
 ### 15.3 Documentation
 - `CHANGELOG.md` - Version history
 - `SECURITY-AUDITS.md` - Security reports
@@ -418,7 +422,7 @@ Each version (v10.1-2025.11.6) includes:
 
 <a id="frequently-asked-questions-faq"></a>
 ## ❓ **16. Frequently Asked Questions (FAQ)**
-
+<a id="is-this-tool-safe-to-use"></a>
 ### 🤔 16.1 Is this tool safe to use?
 Yes! This tool has undergone comprehensive independent security audits by 6 different AI experts with an average score of 9.1/10. Multiple auditors confirmed it's the safest and most stable version ever released, suitable for daily use, corporate deployment, and technician toolkits.
 
@@ -430,28 +434,28 @@ Security measures include:
 - Comprehensive pre-installation checks
 
 **Version 10.1-2025.11.6** is strongly recommended by security auditors for optimal safety and performance.
-
+<a id="will-this-update-all-my-intel-drivers"></a>
 ### 🔄 16.2 Will this update all my Intel drivers?
 This tool specifically updates chipset INF files. It does not update GPU, network, or other device drivers.
-
+<a id="what-are-the-risks"></a>
 ### ⚠️ 16.3 What are the risks?
 As with any system modification, there's a small risk of temporary system instability. The automated restore point minimizes this risk significantly.
-
+<a id="where-are-files-downloaded"></a>
 ### 💾 16.4 Where are files downloaded?
 Files are temporarily stored in `C:\Windows\Temp\IntelChipset\` and automatically cleaned up after installation.
-
+<a id="what-if-something-goes-wrong"></a>
 ### 🔧 16.5 What if something goes wrong?
 The tool creates a system restore point before making changes. You can also check detailed logs in the temp directory.
-
+<a id="how-does-the-automatic-update-check-work"></a>
 ### 🔄 16.6 How does the automatic update check work?
 The tool compares your current version with the latest version on GitHub. If a newer version is available, it offers to download it directly to your Downloads folder with full verification.
-
+<a id="what-does-self-hash-verification-do"></a>
 ### 🔒 16.7 What does self-hash verification do?
 Before execution, the tool calculates its own SHA-256 hash and compares it with the official hash from GitHub. This ensures the file hasn't been modified, corrupted, or tampered with.
-
+<a id="how-are-updates-notified"></a>
 ### 📧 16.8 How are updates notified?
 The tool automatically checks for updates on each run and clearly notifies you if a newer version is available, with options to continue or update.
-
+<a id="why-is-the-certificate-not-trusted"></a>
 ### 🏷️ 16.9 Why is the certificate "not trusted"?
 The FirstEver.tech certificate is self-signed for project authenticity. Public trust requires expensive commercial certificates, but the included certificate allows verification of file origin.
 
@@ -460,7 +464,7 @@ The FirstEver.tech certificate is self-signed for project authenticity. Public t
 
 <a id="compatibility-matrix"></a>
 ## 💻 **17. Compatibility Matrix**
-
+<a id="intel-platform-support"></a>
 ### 17.1 Intel Platform Support
 | Generation | Code Name | Status | Notes |
 |------------|-----------|--------|-------|
@@ -470,7 +474,7 @@ The FirstEver.tech certificate is self-signed for project authenticity. Public t
 | 6th-7th Gen | Skylake/Kaby Lake | ✅ Full | Mature support |
 | 4th-5th Gen | Haswell/Broadwell | ✅ Full | Legacy support |
 | 2nd-3rd Gen | Sandy/Ivy Bridge | ✅ Full | Extended support |
-
+<a id="windows-version-support"></a>
 ### 17.2 Windows Version Support
 | Version | Build | Status | Notes |
 |---------|-------|--------|-------|
@@ -484,7 +488,7 @@ The FirstEver.tech certificate is self-signed for project authenticity. Public t
 
 <a id="performance-metrics"></a>
 ## 📊 **18. Performance Metrics**
-
+<a id="typical-execution-times"></a>
 ### 18.1 Typical Execution Times
 | Phase | Time | Description |
 |-------|------|-------------|
@@ -493,7 +497,7 @@ The FirstEver.tech certificate is self-signed for project authenticity. Public t
 | **Database Download** | 5-15 seconds | Latest INF information fetch |
 | **Package Download** | 30s-3min | Driver package download (size dependent) |
 | **Installation** | 1-5 minutes | INF file installation and system update |
-
+<a id="resource-usage"></a>
 ### 18.2 Resource Usage
 - **Memory**: <10MB during operation
 - **Storage**: ~5MB temporary (automatically cleaned)
@@ -565,7 +569,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - 💼 **LinkedIn**: [Marcin Grygiel](https://www.linkedin.com/in/marcin-grygiel/)
 - 🔧 **GitHub**: [FirstEverTech](https://github.com/FirstEverTech)
 - 📧 **Contact**: [Contact Form](https://www.firstever.tech/contact)
-
+<a id="support-this-project"></a>
 ### 💖 24.1 Support This Project
 This project is maintained in my free time. Your support helps cover development costs and server expenses.
 
@@ -586,19 +590,19 @@ This project is maintained in my free time. Your support helps cover development
 
 <a id="ready-to-update"></a>
 ## 🚀 **25. Ready to Update?**
-
+<a id="quick-start-guide"></a>
 ### 25.1 Quick Start Guide
 1. **Download** latest release from [Releases page](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases)
 2. **Verify** digital signature and hashes (optional but recommended)
 3. **Run as Administrator** for full system access  
 4. **Follow prompts** - tool handles everything automatically
 5. **Restart if prompted** to complete installation
-
+<a id="verification-steps-optional"></a>
 ### 25.2 Verification Steps (Optional)
 - Check file hashes match published SHA256 files
 - Verify digital signature with included certificate
 - Review security audit reports for confidence
-
+<a id="need-help"></a>
 ### 25.3 Need Help?
 - 📚 [Full Documentation](docs/BEHIND-THE-PROJECT_EN.md)
 - 🐛 [Report Issues](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues)
